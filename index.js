@@ -41,6 +41,10 @@ app.get('/post', (req, res) => {
   botAction();
 })
 
+app.get('/', (req, res) => {
+  res.send("<h1>Working</h1>");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
